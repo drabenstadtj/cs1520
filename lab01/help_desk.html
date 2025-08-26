@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Desk</title>
+  </head>
+  <body>
+    <form action="/index.html">
+      <h2>What way do you want us to contact you?</h2>
+      <input
+        type="radio"
+        id="phone"
+        name="contact_type_group"
+        value="phone"
+        checked
+      />
+      <label for="phone">By Phone</label><br />
+
+      <input type="radio" id="email" name="contact_type_group" value="email" />
+      <label for="email">Email</label><br />
+
+      <input
+        type="radio"
+        id="life_chat"
+        name="contact_type_group"
+        value="life_chat"
+      />
+      <label for="life_chat">Live Chat</label><br />
+
+      <h2>Current Issue</h2>
+      <input
+        type="radio"
+        id="mainframe_down"
+        name="issue_type_group"
+        value="service_down"
+        checked
+      />
+      <label for="mainframe_down">Mainframe is Down</label><br />
+
+      <input
+        type="radio"
+        id="reset_password"
+        name="issue_type_group"
+        value="reset_password"
+      />
+      <label for="reset_password">Reset Password</label><br />
+
+      <input
+        type="radio"
+        id="create_account"
+        name="issue_type_group"
+        value="create_account"
+      />
+      <label for="create_account">Create a new Account</label><br />
+
+      <h2>Best time(s) to reach you</h2>
+      <input type="checkbox" id="morning" name="morning" value="morning" />
+      <label for="morning">Morning</label><br />
+
+      <input
+        type="checkbox"
+        id="afternoon"
+        name="afternoon"
+        value="afternoon"
+      />
+      <label for="afternoon">Afternoon</label><br />
+
+      <input type="checkbox" id="evening" name="evening" value="evening" />
+      <label for="evening">Evening</label><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+1. HTML
+    * HTML stands for Hyper Text Markup Language
+    * HTML is the standard markup language for creating Web pages
+
+
+2. W3Schools website
+    * good place to learn and practice HTML commands
+
+	https://www.w3schools.com/html/default.asp
+
+3. Difference between HTML and CSS
+    * HTML provides content and general structure of the page
+    * CSS provides styling / content formatting (see example in the W3Schools)
+
+4. Multiple examples on HTML tags usage can be found on the course canvas
+
+5. Starting a new hands-on project
+5.1 Creating a directory to hold your new project
+
+    01 - HTML
+
+5.2 in a terminal window, do the following:
+
+    cd path/to/the/project/directory
+    code .     (to run VS Code app in that directory)
+
+5.3 Creating a html skeleton file
+5.3.1 Creating an HTML file:
+    In the VS Code Explorer area, create a new file, html_basics.html
+
+5.3.2 Creating the minimum HTML content 
+
+    In the new file edit area, type "doc" and ENTER
+
+5.3.3 Displaying your page in the browser
+5.3.3.1 Adding the "Live Server" extension by Ritwick Dey into your VS Code
+
+    Go to Extensions and search "Live Server" by Ritwick Dey and install
+    Install extension
+
+5.3.3.2 Displaying the page in the browser
+
+    In the html file, right-click and select option "open with live server"
+
+5.2 Commonly used HTML tags
+5.2.1 Headings
+
+    <h1> Headings </h1>
+    <h1> H1 heading </h1>
+    <h2> H2 heading </h2>
+    <h3> H3 heading </h3>
+    <h4> H4 heading </h4>
+
+5.2.2 Paragraphs
+
+    <hr> 
+    <h1> Paragraphs </h1>
+    <p> this is one paragraph with multiple </p>
+    <p> this is one paragraph
+        follow by another paragraph
+        and the third paragraph </p>
+
+5.2.3 Images
+
+    <hr>
+    <h1> Images </h1>
+    <img src="https://cdn.pixabay.com/photo/2015/10/01/19/05/car-967470_1280.png" width="400px">
+
+5.2.6. Anchors
+
+    <hr>
+    <h1> Links / anchors </h1>
+    <a href="http://www.google.com"> Google </a>
+    <a href="http://www.google.com"> <img src="https://cdn.pixabay.com/photo/2015/10/01/19/05/car-967470_1280.png" width="400px"> </a>
+    <a href="about.html"> About </a>
+
+    note: create an about.html file and add the following tags
+
+    <h2> About page </h2>
+    <a href="html_basics.html"> Back to the main page </a>
+
+5.2.4 Lists
+5.2.4.1 Unordered lists
+
+    <hr>
+    <h1> Unordered Lists </h1>
+    <ul>
+        <li> pasta </li>
+        <li> eggs </li>
+        <li> tomatoes </li>
+        <li> oranges </li>
+    </ul>
+
+    more complex list items
+    https://www.amazon.com/s?k=plants&crid=JPQ0XYHARDIV&sprefix=plants%2Caps%2C116&ref=nb_sb_noss_1
+
+    <hr>
+    <h1> More complex unordered Lists </h1>
+    <ul>
+        <li> 
+            <a href="http://www.amazon.com">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiNJOHBK72RKGsxkRR1U_clBGah0Ll0nIOjQ&s">
+                <p> Aprilia RS 457 </p>
+                <h3> Lightweight, easy to handle and packed with technology, the Aprilia RS 457 thrills every rider, whether on the road or carving up the track. </h3>
+                <p> Revolutionary and sophisticated, the RS 457 oozes elegance and aggression through clear racing elements such as the front double fairing and 2-in-1 exhaust. </p>
+                <button>Buy now </button>
+            </a>
+        </li>
+    </ul>
+
+5.2.4.2 Ordered lists
+
+    <hr>
+    <h1> Ordered Lists </h1>
+    <ol>
+        <li> take the car to the mechanic </li>
+        <li> explain the car problem </li>
+        <li> wait for the mechanic to fix the problem </li>
+        <li> paid for the service </li>
+    </ol>
+
+5.2.5 The div tag
+    Used to group 2 or more different types of elements
+
+    <hr>
+    <h1> div tags </h1>
+    <div>
+        <h1> H1 heading </h1>
+        <img src="https://cdn.pixabay.com/photo/2015/10/01/19/05/car-967470_1280.png" width="400px">
+        <p> this is one paragraph with multiple </p>
+    </div>
+
+    ==> don't do this, this div has only 1 child element, the <ul>
+    <div>
+        <ul>
+            <li> pasta </li>
+            <li> eggs </li>
+            <li> tomatoes </li>
+            <li> oranges </li>
+        </ul>
+    </div>
+
+6. Blocks versus inline commands
+6.1 Block commands
+
+    <hr>
+    <h1> block commands </h1>
+    <p> A paragraph </p>
+    <h2> A heading </h2>
+    <div> This paragraph </div>
+    <ul> 
+        <li> test 1 </li>
+        <li> test 2 </li>
+    </ul>
+
+6.2 Inline commands
+    
+    <hr>
+    <h1> Inline commands </h1>
+    <img src="https://cdn.pixabay.com/photo/2015/10/01/19/05/car-967470_1280.png" width="400px">
+    <a href="http://www.google.com"> Google </a>
+    <img src="https://cdn.pixabay.com/photo/2015/10/01/19/05/car-967470_1280.png" width="400px">
+    <a href="http://www.google.com"> Google </a>
+    <p> paragraph here </p>
+    <img src="https://cdn.pixabay.com/photo/2015/10/01/19/05/car-967470_1280.png" width="400px">
+    <a href="http://www.google.com"> Google </a>
+    <button>Buy now </button>
+    <!-- Text input -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username">
+
+6.3 Forms
+6.3.1 Forms and text inputs
+    <hr>
+    <h1> Forms and text inputs </h1>
+
+    <form action="" method="">
+        <!-- Text input -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+6.3.2 Forms and passwords
+    Add the following lines:
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+6.3.3 Forms and Radio Buttons
+    Add the following lines:
+
+    <!-- Radio buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+6.3.4 Forms and Checkboxes
+    Add the folling lines:
+
+    <!-- Checkboxes -->
+    <p>Hobbies:</p>
+    <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+    <label for="hobby1">Reading</label><br>
+
+    <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+    <label for="hobby2">Traveling</label><br>
+
+    <input type="checkbox" id="hobby3" name="hobbies" value="sports">
+    <label for="hobby3">Sports</label><br><br>
+
+6.3.5 Forms and drompdown menus
+    Add the following lines:
+
+    <!-- Dropdown menu -->
+    <label for="country">Select your country:</label>
+    <select id="country" name="country">
+      <option value="us">United States</option>
+      <option value="uk">United Kingdom</option>
+      <option value="ca">Canada</option>
+      <option value="au">Australia</option>
+    </select>
+    <br><br>

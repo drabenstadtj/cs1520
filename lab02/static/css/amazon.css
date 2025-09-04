@@ -1,0 +1,132 @@
+body {
+    background-color:#e3e6e6;
+    margin: 0%
+}
+
+#top_bar_div {
+    background-color: #131921;
+    overflow: auto;
+}
+
+/* top bar styling */
+.top_bar_img {
+    height: 32px;
+    margin-right: 10px;
+    float:left;margin-left: 10px;
+    margin-top: 10px;
+}
+
+.top_bar_h3 {
+    float:left;
+    text-decoration: none;
+    color: white;
+}
+
+#top_bar_div_left_div {
+    float:left;
+    background-color: #131921;
+}
+
+#top_bar_div_mid_div {
+    width: 300px;
+    margin:auto;
+    
+}
+
+#top_bar_div_right_div {
+    float:right;
+
+}
+
+#top_bar_div_mid_div input {
+    float:left;
+    margin-right: 10px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* horizontal navigation bar */
+#horizontal_nav_bar_ul {
+    list-style-type: none;
+    background-color: #232f3e;
+    clear: both;
+    overflow: auto;
+    margin: 0% 0% 0% 0%;
+    text-align: center;
+}
+
+#horizontal_nav_bar_ul li {
+    float:left;
+    margin-right: 20px;
+}
+
+#horizontal_nav_bar_ul li a {
+    display: block;
+    text-decoration: none;  
+    color:white;
+}
+
+#main_image {
+    width:100%;
+}
+
+/* main product area */
+#products_ul, #products_group_ul {
+    clear:both;
+    list-style-type: none;
+    width:70%;
+    margin:0px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#products_ul li {
+    background-color: #ffffff;
+    /* float:left;*/
+    display:inline-block;
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+}
+
+#products_ul li h3{
+    text-align: left;
+    padding-left: 20px;
+}
+
+#products_ul {
+    padding:0px;
+}
+
+#see_more {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* h3 {
+    text-align:center;
+    width: 100%;
+} */
+
+#products_group_ul {
+    padding:0px;
+    margin:0px auto;
+    li {
+        float:left;
+        width: 40%;
+    }
+    img {
+        float:left;
+        width:100%;
+    };
+    a {
+        clear:both;
+        display:block;
+    }
+}
+
+.anchor {
+    clear:both;
+    margin: 0px 10px 10px 10px;
+    display:block;
+}

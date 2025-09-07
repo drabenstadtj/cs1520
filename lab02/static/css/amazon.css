@@ -74,7 +74,6 @@ body {
 #products_ul, #products_group_ul {
     clear:both;
     list-style-type: none;
-    width:70%;
     margin:0px auto;
     padding: 10px;
     text-align: center;
@@ -82,15 +81,14 @@ body {
 
 #products_ul li {
     background-color: #ffffff;
-    /* float:left;*/
-    display:inline-block;
-    width: 20%;
+    float:left;
     margin: 10px;
     text-align: center;
+
 }
 
 #products_ul li h3{
-    text-align: left;
+    text-align: center;
     padding-left: 20px;
 }
 
@@ -99,7 +97,7 @@ body {
 }
 
 #see_more {
-    text-align: left;
+    text-align: center;
     padding-left: 10px;
 }
 

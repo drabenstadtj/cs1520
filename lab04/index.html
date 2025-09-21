@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <!-- defining all the JavaScript functions used in this project -->
+    <script type="text/javascript" src="./static/js/main-style.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="./static/css/MortgageCalculator.css" />
+</head>
+
+<body>
+    <div id="plots-container">
+        <div id="monthlyInterestRateAndPrincipalPayments" class="plot"></div>
+        <div id="monthlyPrincipalValues" class="plot"></div>
+    </div>
+    <br />
+    <!-- running the main_driver method -->
+    <script type="text/javascript">
+        main_driver();
+    </script>
+</body>
+
+</html>

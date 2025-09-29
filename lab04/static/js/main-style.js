@@ -44,7 +44,6 @@ function displayResults(loanInformation, loanEquationParameters, m) {
     let [housePrice, downPayment, annualInterestRate, periodInYears] = loanInformation;
     let [p, r, n] = loanEquationParameters;
 
-    // income rule: assume 30% max of monthly income can go to mortgage
     let minMonthlyIncome = (m / 0.30);  
 
     let resultsDiv = document.createElement("div");
@@ -52,7 +51,7 @@ function displayResults(loanInformation, loanEquationParameters, m) {
         <h2>Mortgage Calculator</h2>
         <p><strong>House Price:</strong> $${housePrice.toLocaleString()}</p>
         <p><strong>Down Payment:</strong> $${downPayment.toLocaleString()}</p>
-        <p><strong>Principal:</strong> $${p.toLocaleString()}</p>
+        <p><strong>Princpal:</strong> $${p.toLocaleString()}</p>
         <p><strong>Annual Interest Rate:</strong> ${(annualInterestRate * 100).toFixed(2)}%</p>
         <p><strong>Loan Period:</strong> ${periodInYears} years</p>
         <p><strong>Monthly Mortgage Payments:</strong> $${m.toFixed(2)} per month</p>

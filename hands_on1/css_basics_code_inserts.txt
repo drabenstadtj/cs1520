@@ -1,0 +1,383 @@
+1. HTML
+    * CSS stands for Cascading Style Sheets
+    * CSS adjusts the font, size, or decorative flourishes like animations or images
+
+2. W3Schools website
+    * good place to learn and practice CSS commands
+
+    https://www.w3schools.com/css/default.asp
+
+3. Difference between HTML and CSS
+    * HTML provides content and general structure of the page
+    * CSS provides styling / content formatting (see example in the W3Schools)
+
+4. Multiple examples on CSS tags usage can be found on the course canvas
+    Example below shows how a same-content HTML can be displayed differently based
+    on the chosen CSS rules
+
+    https://www.w3schools.com/css/css_intro.asp
+
+5. Starting a new hands-on project
+5.1 Creating a directory to hold your new project
+
+    02 - CSS
+
+5.2 in a terminal window, do the following:
+
+    cd path/to/the/project/directory
+    code .     (to run VS Code app in that directory)
+
+5.3 Creating a html skeleton file
+5.3.1 Creating an HTML file:
+    In the VS Code Explorer area, create a new file, css_basics.html
+
+5.3.2 Creating the minimum HTML content 
+
+    In the new file edit area, type "doc" and ENTER
+
+5.3.3 Displaying your page in the browser
+5.3.3.1 Adding the "Live Server" extension by Ritwick Dey into your VS Code
+
+    Go to Extensions and search "Live Server" by Ritwick Dey and install
+    Install extension
+
+5.3.3.2 Displaying the page in the browser
+
+    In the html file, right-click and select option "open with live server"
+
+5.2 Creating a CSS file
+5.2.1 Creating the file
+    From the Explorer area, add a new file, named css_basics.css
+
+5.2.2 Linking the file to the HTML file
+
+    <link rel="stylesheet" href="css_basics.css">
+
+6. changing features of the same html tag throughout the page
+    In the html file add this lines
+
+    <h1> Changing all the H2 Headings </h1>
+    <h2> First heading </h2>
+    <h2> Second heading </h2>
+    <h2> Third heading </h2>
+    <h2> Fourth heading </h2>
+
+    In the css file add the following lines:
+
+    h2 {
+        color:blue;
+    }
+
+7. changing the features of a selected group of html tags
+    in the html file:
+
+    <hr>
+    <h1>changing only few paragraphs, not all</h1> 
+    <p class="test_ok"> Test 01: Ok </p>
+    <p class="test_fail"> Test 02: Fail </p>
+    <p class="test_ok"> Test 03: Ok </p>
+    <p class="test_ok"> Test 04: Ok </p>
+    <p class="test_fail"> Test 05: Fail </p>
+
+    in the css file:
+
+    .test_ok {
+        color:green;
+    }
+
+    .test_fail {
+        color:red;
+        font-weight: bold;
+    }
+
+8. changing one H2 from all the H2 found in the page
+    in the html file:
+
+    <hr>
+    <h1>changing one H2 from all the H2 found in the page</h1>
+    <h2 id="main_text"> Main Text </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut eum eos tempore
+       odit quasi consequatur vero placeat molestiae repellendus deserunt quae officia dolorum 
+       amet eius, quia dicta, adipisci ex?</p>
+
+    in the css file:
+
+    #main_text {
+        color:yellow;
+    }
+
+9. Changing the margin and padding of an HTML element
+    in the html file:
+
+    <hr>
+    <h1>Changing the margin and padding of an HTML element</h1>
+    <h2> First heading </h2>
+    <h2 id="margin_padding"> Second heading </h2>
+    <h2> Third heading </h2>
+    <h2> Fourth heading </h2>
+
+    in the css file:
+
+    #margin_padding {
+        marging: 100px;
+        padding: 40px;
+    }
+
+10. Changing a block command to an inline command
+    in the html file:
+
+    <hr>
+    <h1>Changing a block command to an inline command</h1>
+    <a class="inline_paragraph" href="http://www.google.com"> Google link </a>
+    <p class="inline_paragraph"> this is a paragraph </p>
+    <a class="inline_paragraph" href="http://www.amazon.com"> Amazon link </a>
+
+    in the css file:
+
+    .inline_paragraph {
+        float:left;
+        margin: 10px;
+    }
+
+11. creating a vertical navigation bar from an ul
+    in the html file:
+
+    <hr>
+    <h1> creating a vertical navigation bar from an ul </h1>
+    <ul id="vertical_navigation_1">
+        <li> 
+            <a href="">
+                <h3>home</h3>
+            </a>
+        </li>
+        <li> 
+            <a href="">
+                <h3> history </h3>
+            </a>
+        </li>
+        <li> 
+            <a href="">
+                <h3> play list </h3>
+            </a> 
+        </li>
+        <li> 
+            <a href=""> 
+                <h3>series</h3>
+            </a> 
+        </li>
+    </ul>
+
+    in the css file:
+
+    hr {
+        clear:both;
+    }
+
+    #vertical_navigation_1 {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    #vertical_navigation_1 a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #vertical_navigation_1 h3 {
+        margin: 5px;
+    }
+
+12. creating a little bit more complex vertical navigation bar from an ul
+    in the html file:
+
+    <hr>
+    <h1> creating a little bit more complex vertical navigation bar from an ul </h1>
+    <ul id="vertical_navigation_2">
+        <li>
+            <a href="">
+                <img src="./images/vertical_nav/home.png" alt="">
+                <h3>home</h3>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./images/vertical_nav/history.png" alt="">
+                <h3> history </h3>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./images/vertical_nav/playlist.png" alt="">
+                <h3> play list </h3> 
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./images/vertical_nav/short.png" alt="">
+                <h3>series</h3>
+            </a>
+        </li>
+    </ul>
+
+    in the css file:
+
+    #vertical_navigation_2 {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    #vertical_navigation_2 a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #vertical_navigation_2 li {
+        clear:both;
+    }
+
+    #vertical_navigation_2 img {
+        margin:10px 0px 0px 0px;
+        width: 16px;
+        float:left;
+    }
+
+    #vertical_navigation_2 h3 {
+        margin:10px 0px 0px 5px;
+        float:left;
+    }
+
+13. creating a horizontal navigation bar from an ul
+    in the html file:
+
+    <br><br>
+    <hr>
+    <h1> creating a horizontal navigation bar from an ul </h1>
+    <ul id="horizontal_navigation">
+        <li> 
+            <a href="">
+                <h3>home</h3>
+            </a>
+        </li>
+        <li> 
+            <a href="">
+                <h3> history </h3>
+            </a>
+        </li>
+        <li> 
+            <a href="">
+                <h3> play list </h3>
+            </a> 
+        </li>
+        <li> 
+            <a href=""> 
+                <h3>series</h3>
+            </a> 
+        </li>
+    </ul>
+
+    in the css file:
+
+    #horizontal_navigation {
+        list-style-type: none;
+    }
+
+    #horizontal_navigation li {
+        float:left;
+        margin: 0px 10px;
+    }
+
+    #horizontal_navigation a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+14. creating a list of posters from an ul
+    in the html file:
+
+    <br><br>
+    <hr>
+    <h1> creating a list of posters from an ul </h1>
+    <ul id="posters_ul">
+        <li>
+            <a href="">
+                <img src="./images/movies/blade_runner_2049.jpg" alt="">
+                <h3>Blade Runner 2049 is a 2017 American epic neo-noir science 
+                    fiction film directed by Denis Villeneuve from a screenplay 
+                    by Hampton Fancher and Michael Green</h3>
+                <p> Rent: $9.99 </p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./images/movies/deep_house_mix.jpg" alt="">
+                <h3>Play Deep House Mix on SoundCloud and discover 
+                    followers on SoundCloud | Stream tracks, albums, 
+                    playlists on desktop and mobile.</h3>
+                <p> Rent: $7.99 </p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./images/movies/study_music.jpg" alt="">
+                <h3>Enjoy these 12 of deep focus music to improve 
+                    concentration while studying with a beautiful 
+                    selection of nature landscapes </h3>
+                <p> Rent: $5.99 </p>
+            </a>
+        </li>
+    </ul>
+
+15. creating a top bar to be displayed on each of your site
+    Check out the youtube webpage for example of what we will do here
+
+    in the html file:
+
+    <br><br>
+    <hr>
+    <h1> creating a top bar </h1>
+    <div id="top_bar">
+        <div id="top_bar_left_div">
+            <img src="./images/top_bar/youtube.png" alt="">
+            <h3> Premium </h3>
+        </div>
+        <div id="top_bar_mid_div">
+            <input type="text" placeholder="Movie name">
+            <img src="./images/top_bar/lupe.png" alt="">
+            <img src="./images/top_bar/mic.png" alt="">
+        </div>
+        <div id="top_bar_right_div">
+            <h3> +Create </h3>
+            <img src="./images/top_bar/bell.png" alt="">
+            <img src="./images/top_bar/user.png" alt="">
+        </div>
+    </div>
+
+    in the css file:
+
+    #top_bar  {
+        clear:both;
+    }
+
+    #top_bar img {
+        width:16px;
+    }
+
+    #top_bar_left_div img, #top_bar_left_div h3 {
+        float:left;
+        margin: 0px 5px;
+    }
+
+    #top_bar_mid_div {
+        float:left;
+        margin: 0px 0px 0px 200px;
+    } 
+
+    #top_bar_right_div {
+        float:right;
+        margin:0px;
+    }
+
+    #top_bar_right_div h3, #top_bar_right_div img {
+        float:left;
+        margin: 0px 5px;
+    }

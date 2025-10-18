@@ -1,0 +1,13 @@
+#plots-container {
+    margin-bottom: 20px;
+}
+
+.plot {
+    display: inline-block;
+    width: 48%;            
+    min-width: 400px;
+    margin-right: 2%;      
+}
+.plot:last-child {
+    margin-right: 0;      
+}

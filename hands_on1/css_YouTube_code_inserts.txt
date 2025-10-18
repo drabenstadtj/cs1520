@@ -1,0 +1,192 @@
+1. Basis Project
+1.1 Create a new folder: "02 - HTML - CSS YouTube Page"
+1.2 Download the CSS.zip from Canvas (it is the completed version of the previous
+    hands-on project)
+
+2. Understanding what this project is about:
+    Open the YouTubePage_ScreenShot.png provided in this project and
+    go over the elements of this page
+
+3. Deleting unnecessary code from the previous project
+3.1 Deleting HTML commands
+    From the css_basics.html:
+
+    <h1> Changing all the H2 Headings </h1>
+    <h2> First heading </h2>
+    <h2> Second heading </h2>
+    <h2> Third heading </h2>
+    <h2> Fourth heading </h2>
+
+    <hr>
+    <h1>changing only few paragraphs, not all</h1> 
+    <p class="test_ok"> Test 01: Ok </p>
+    <p class="test_fail"> Test 02: Fail </p>
+    <p class="test_ok"> Test 03: Ok </p>
+    <p class="test_ok"> Test 04: Ok </p>
+    <p class="test_fail"> Test 05: Fail </p>
+
+    <hr>
+    <h1>changing one H2 from all the H2 found in the page</h1>
+    <h2 id="main_text"> Main Text </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut eum eos tempore
+       odit quasi consequatur vero placeat molestiae repellendus deserunt quae officia dolorum 
+       amet eius, quia dicta, adipisci ex?</p>
+
+    <hr>
+    <h1>Changing the margin and padding of an HTML element</h1>
+    <h2> First heading </h2>
+    <h2 id="margin_padding"> Second heading </h2>
+    <h2> Third heading </h2>
+    <h2> Fourth heading </h2>
+
+    <hr>
+    <h1>Changing a block command to an inline command</h1>
+    <a class="inline_paragraph" href="http://www.google.com"> Google link </a>
+    <p class="inline_paragraph"> this is a paragraph </p>
+    <a class="inline_paragraph" href="http://www.amazon.com"> Amazon link </a>
+
+    <hr>
+    <h1> creating a vertical navigation bar from an ul </h1>
+    <ul id="vertical_navigation_1">
+        <li> 
+            <a href="">
+                <h3>home</h3>
+            </a>
+        </li>
+        <li> 
+            <a href="">
+                <h3> history </h3>
+            </a>
+        </li>
+        <li> 
+            <a href="">
+                <h3> play list </h3>
+            </a> 
+        </li>
+        <li> 
+            <a href=""> 
+                <h3>series</h3>
+            </a> 
+        </li>
+    </ul>
+
+    <hr>
+
+3.2 Deleting CSS commands
+    From the css_basics.css:
+
+    body {
+        background-color: aqua;
+    }
+
+    h2 {
+        color:blue;
+    }
+
+    .test_ok {
+        color:green;
+    }
+
+    .test_fail {
+        color:red;
+        font-weight: bold;
+    }
+
+    #main_text {
+        color:yellow;
+    }
+
+    #margin_padding {
+        marging: 100px;
+        padding: 40px;
+    }
+
+    .inline_paragraph {
+        float:left;
+        margin: 10px;
+    }
+
+    hr {
+        clear:both;
+    }
+
+    #vertical_navigation_1 {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    #vertical_navigation_1 a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #vertical_navigation_1 h3 {
+        margin: 5px;
+    }
+
+4. Moving elements to their right location
+4.1 Moving the top bar
+    Move the top bar to the top of the page
+
+4.2 Check if the other elements are in the correct order
+
+    a) top bar
+    b) vertical navigation
+    c) horizontal navigation
+    d) posters
+
+4.3 Open the page in a Browser and see what you get
+
+4.4 Preventing formating to flowdown from left navigation
+    bar to the right navigation bar
+    (just for practicing; we will remove this later)
+
+
+5. Updating the HTML and CSS files to reproduce the
+   YouTube page
+
+5.1 Grouping the horizontal nav bar with the poster area
+    in the HTML file:
+
+5.1.1 Grouping horizontal bar with poster area
+    in the hTML file:
+    add a <div> tag that surrounds the horizontal navigation
+    bar and the posters elements
+
+    <div id="right_area_div">
+        <ul id="horizontal_navigation">
+
+    in the CSS file:
+
+    #right_area_div {
+        float:left;
+        width:80%;
+    }
+
+5.2 Making few changes in the CSS file
+
+5.2.1 Changing the vertical bar ul from block to inline
+    in the CSS file:
+    making the vertical navigation bar to inline element
+    #vertical_navigation_2 {
+        float:left;
+
+    reseting styling from tags above the nav bar
+    #vertical_navigation_2 {
+        clear:both;
+
+    setting a width for vertical nav bar
+    #vertical_navigation_2 {
+        width:15%;
+
+5.2.2 Reseting poster ul to default block element
+    In the CSS file:
+
+    #posters_ul {
+        clear:both;   // add this line!!!
+        list-style-type: none;
+    }
+
+
+
+

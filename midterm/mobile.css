@@ -1,0 +1,21 @@
+#left, #right-div {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+}
+
+select {
+    width: 100%;
+}
+
+#car_image, #order_description {
+    max-width: 100%;
+}
+
+#main_container {
+    padding: 15px;
+}
+
+body {
+    padding: 10px;
+}

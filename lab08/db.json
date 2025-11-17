@@ -1,0 +1,52 @@
+{
+  "smartphones": [
+    {
+      "id": 1,
+      "brand": "Apple iPhone 14 Pro",
+      "price": "$999.00",
+      "screen": "6.1 inches",
+      "pixels": "460 ppi",
+      "resolution": "2556 x 1179",
+      "storage": "128GB",
+      "ram": "6GB",
+      "battery": "3200 mAh",
+      "weight": "206g"
+    },
+    {
+      "id": 2,
+      "brand": "Samsung Galaxy S23 Ultra",
+      "price": "$1199.00",
+      "screen": "6.8 inches",
+      "pixels": "501 ppi",
+      "resolution": "3088 x 1440",
+      "storage": "256GB",
+      "ram": "12GB",
+      "battery": "5000 mAh",
+      "weight": "234g"
+    },
+    {
+      "id": 3,
+      "brand": "Google Pixel 8 Pro",
+      "price": "$899.00",
+      "screen": "6.7 inches",
+      "pixels": "489 ppi",
+      "resolution": "2992 x 1344",
+      "storage": "128GB",
+      "ram": "12GB",
+      "battery": "5050 mAh",
+      "weight": "213g"
+    },
+    {
+      "id": 4,
+      "brand": "OnePlus 11",
+      "price": "$699.00",
+      "screen": "6.7 inches",
+      "pixels": "525 ppi",
+      "resolution": "3216 x 1440",
+      "storage": "256GB",
+      "ram": "16GB",
+      "battery": "5000 mAh",
+      "weight": "205g"
+    }
+  ]
+}

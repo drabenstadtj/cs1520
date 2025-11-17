@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Database Manager</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h2 id="title">HTTP Requests - Smartphone Database</h2>
+    
+    <fieldset>
+        <legend>View All Smartphones</legend>
+        <button type="button" id="view_all_smartphones_button">View all Smartphone entries</button>
+        <br>        
+    </fieldset>
+
+    <fieldset>
+        <legend>View details of a single Smartphone</legend>
+        <button type="button" id="get_one_smartphone_button">View Smartphone</button>
+        <input type="text" id="smartphone_number_text_input" placeholder="Enter smartphone ID...">
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Add a new Smartphone</legend>
+        <button type="button" id="add_new_smartphone_button">Add new Smartphone</button><br>
+        <input type="text" id="insert_new_smartphone_brand_text_input" placeholder="Enter Brand...">
+        <input type="text" id="insert_new_smartphone_price_text_input" placeholder="Enter Price...">
+        <input type="text" id="insert_new_smartphone_screen_text_input" placeholder="Enter Screen..."><br>
+        <input type="text" id="insert_new_smartphone_pixels_text_input" placeholder="Enter Pixels...">
+        <input type="text" id="insert_new_smartphone_resolution_text_input" placeholder="Enter Resolution...">
+        <input type="text" id="insert_new_smartphone_storage_text_input" placeholder="Enter Storage..."><br>
+        <input type="text" id="insert_new_smartphone_ram_text_input" placeholder="Enter RAM...">
+        <input type="text" id="insert_new_smartphone_battery_text_input" placeholder="Enter Battery...">
+        <input type="text" id="insert_new_smartphone_weight_text_input" placeholder="Enter Weight..."><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Update an existing Smartphone</legend>
+        <button type="button" id="update_existing_smartphone_button">Update Smartphone</button><br>
+        <input type="text" id="update_existing_smartphone_number_text_input" placeholder="Enter Smartphone ID..."><br>
+        <input type="text" id="update_existing_smartphone_brand_text_input" placeholder="Enter Brand...">
+        <input type="text" id="update_existing_smartphone_price_text_input" placeholder="Enter Price...">
+        <input type="text" id="update_existing_smartphone_screen_text_input" placeholder="Enter Screen..."><br>
+        <input type="text" id="update_existing_smartphone_pixels_text_input" placeholder="Enter Pixels...">
+        <input type="text" id="update_existing_smartphone_resolution_text_input" placeholder="Enter Resolution...">
+        <input type="text" id="update_existing_smartphone_storage_text_input" placeholder="Enter Storage..."><br>
+        <input type="text" id="update_existing_smartphone_ram_text_input" placeholder="Enter RAM...">
+        <input type="text" id="update_existing_smartphone_battery_text_input" placeholder="Enter Battery...">
+        <input type="text" id="update_existing_smartphone_weight_text_input" placeholder="Enter Weight..."><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Deleting an existing Smartphone</legend>
+        <button type="button" id="delete_existing_smartphone_button">Delete Smartphone</button> 
+        <input type="text" id="delete_existing_smartphone_number_text_input" placeholder="Enter Smartphone ID..."><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Server Response</legend>
+        <div id="display_div_id">
+            
+        </div>
+    </fieldset>
+
+</body>
+
+</html>

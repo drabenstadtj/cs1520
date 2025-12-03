@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='images/christmas_story_enlarged.jpeg') }}" alt="" width="800px">
+    <h2> TIMELESS COMEDY RETURNS TO PUT YOU AND YOURS ON THE NICE LIST THIS HOLIDAY SEASON </h2>
+    <p> Back by popular demand, last year’s holiday hit becomes your newest yuletide tradition 
+        as Ralphie Parker and company make their triumphant return to the O’Reilly Theater stage. 
+        The amazing memories and moments made famous by the movie, from disastrous family meals 
+        — to sticky situations in the schoolyard — to fateful and funny visits to Santaland come 
+        to life, sparking nostalgia for ages 9 to 99. This production is not just a Christmas 
+        story, it’s our Christmas story. </p>
+        
+    <p> <strong> Rating: </strong> PG for allusion to explicit language, brief and mild violence
+        on stage, themes of bullying, and romantic innuendo. Suitable for most audiences with 
+        guidance urged for pre-teens.</p>
+        
+    <p> <strong>Run Time: </strong>2 hours, 20 minutes</p>   
+    <p> <strong> Accessibility: </strong> For personal assistance selecting accessible seats or 
+        for more information about accessibility for a person with a disability, please contact 
+        Customer Service at 412-316-1600</p>
+
+    <form action="{{ url_for('buy_tickets', play_name='christmas_story') }}" method="post">
+        <input type="submit" value="Buy Tickets">
+    </form>
+</body>
+</html>

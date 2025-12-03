@@ -1,0 +1,23 @@
+body {
+    min-width: 1110px;
+}
+
+h2, h3, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    width: 30%;
+    margin: 20px 5px 5px 10px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}

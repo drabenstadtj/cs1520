@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/buy_tickets.css') }} ">
+    <title>Ticket Master</title>
+</head>
+<body>
+    <h1> Buy tickets for {{ play_name }} </h1>
+
+    <img src="{{ url_for('static', filename='images/seating_map.png')}}" alt="">
+    
+    <form action="{{ url_for('order_summary', play_name=play_name) }}" method="post">
+        <div id="choosing_seat">
+        <div>
+            <h3 class="selector_label">Zone</h3>
+            <select name="zone" id="zone">
+                <option value="green">  Green  </option>
+                <option value="blue">   blue   </option>
+                <option value="purple"> Purple </option>
+                <option value="orange"> Orange </option>
+            </select>
+        </div>
+        <div>
+            <h3 class="selector_label">Sector</h3>
+            <select name="sector" id="sector">
+                <option value="right">        Rigth        </option>
+                <option value="right_center"> Rigth Center </option>
+                <option value="center">       Center       </option>
+                <option value="leff_center">  Left Center  </option>
+                <option value="leff">         Left         </option>
+            </select>        
+        </div>
+    </div>
+    <div id="buying_info">
+        <label for="customer_name"> Customer Name: </label>
+        <input type="text" id="customer_name" name="customer_name">
+        <label for="date_and_time"> Date and Time: </label>
+        <input type="text" id="date_and_time" name="date_and_time">
+
+        <input type="submit" value="Buy Tickets" id="submit">
+    </div>
+    </form>
+
+</body>
+</html>

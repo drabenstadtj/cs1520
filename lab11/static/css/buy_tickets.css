@@ -1,0 +1,64 @@
+body {
+    min-width: 1000px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    float: left;
+    width: 500px;
+}
+
+#choosing_seat {
+    margin-top: 30px;
+}
+
+.selector_label {
+    float: left;
+    margin: 0px 10px;
+}
+
+select {
+    float:left;
+}
+
+label {
+    clear:both;
+    display:block;
+}
+
+form div {
+    float:left;
+    margin:10px;
+    padding:10px;
+}
+
+form {
+    float: left;
+}
+
+form div h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#buying_info {
+    clear:both;
+    display:block;
+    margin: 20px 0px 20px 40px;
+}
+
+#buying_info input {
+    margin: 10px 0px;
+}
+
+#buying_info label {
+    margin: 10px 0px 0px 0px;
+}
+
+#submit {
+    display:block;
+}
